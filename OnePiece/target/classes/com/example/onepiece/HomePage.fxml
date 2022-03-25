@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.onepiece.HomeController">
+    <ImageView fitHeight="308.0" fitWidth="426.0" layoutX="179.0" layoutY="45.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../../../imgs/logo.jpg"/>
+    </ImageView>
+    <Button fx:id="logoutButton" layoutX="270.0" layoutY="379.0" mnemonicParsing="false"
+            onAction="#ActionOnLogoutButton" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #e58018;"
+            text="Logout">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </Button>
+</AnchorPane>
