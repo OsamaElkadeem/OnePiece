@@ -7,9 +7,43 @@ import javafx.scene.control.Button;
 import java.io.IOException;
 
 public class HomeController {
-
+    @FXML
+    private Button DarkModeButton;
+    @FXML
+    private Button checkoutButton;
+    @FXML
+    private Button homeButton;
+    @FXML
+    private Button listButton;
     @FXML
     private Button logoutButton;
+    @FXML
+    private Button shopButton;
+
+    @FXML
+    void ActionOnCheckoutButton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void ActionOnDarkModeButton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void ActionOnHomeButton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void ActionOnListButton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void ActionOnShopButton(ActionEvent event) {
+
+    }
 
     @FXML
     void ActionOnLogoutButton(ActionEvent event) throws IOException {

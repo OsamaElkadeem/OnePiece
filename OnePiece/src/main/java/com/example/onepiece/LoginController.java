@@ -31,7 +31,6 @@ public class LoginController {
     private void checkLogin() throws IOException {
         AppMain m = new AppMain();
         if (username.getText().toString().equals("Admin") && password.getText().toString().equals("1234")){
-           label.setText("Success!");
            m.changeScene ("HomePage.fxml");
         }
         else if (username.getText().isEmpty() && password.getText().isEmpty()){
