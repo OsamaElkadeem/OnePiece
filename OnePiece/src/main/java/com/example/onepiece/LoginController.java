@@ -30,7 +30,8 @@ public class LoginController {
 
     private void checkLogin() throws IOException {
         AppMain m = new AppMain();
-        if (username.getText().toString().equals("Admin") && password.getText().toString().equals("1234")){
+        if ((username.getText().toString().equals("Admin") && password.getText().toString().equals("12345")) ||
+            (username.getText().toString().equals("User") && password.getText().toString().equals("1234"))){
            m.changeScene ("HomePage.fxml");
         }
         else if (username.getText().isEmpty() && password.getText().isEmpty()){
