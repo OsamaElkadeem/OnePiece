@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a71be89-d114-4af0-8eec-2e68b2053e16" name="Changes" comment="Added admin list page designed on Scene Builder.&#10;Edited &quot;List&quot; button on &quot;Home&quot; page to take you to admin list." />
+    <list default="true" id="9a71be89-d114-4af0-8eec-2e68b2053e16" name="Changes" comment="Added admin list page designed on Scene Builder.&#10;Edited &quot;List&quot; button on &quot;Home&quot; page to take you to admin list.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/onepiece/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/onepiece/HomeController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +115,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added admin list page designed on Scene Builder.&#10;Edited &quot;List&quot; button on &quot;Home&quot; page to take you to admin list." />

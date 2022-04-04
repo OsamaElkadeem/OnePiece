@@ -21,8 +21,9 @@ public class HomeController {
     private Button shopButton;
 
     @FXML
-    void ActionOnCheckoutButton(ActionEvent event) {
-
+    void ActionOnCheckoutButton(ActionEvent event) throws IOException {
+        AppMain m = new AppMain();
+        m.changeScene("Checkout.fxml");
     }
 
     @FXML
@@ -31,8 +32,9 @@ public class HomeController {
     }
 
     @FXML
-    void ActionOnHomeButton(ActionEvent event) {
-
+    void ActionOnHomeButton(ActionEvent event) throws IOException {
+        AppMain m = new AppMain();
+        m.changeScene("HomePage.fxml");
     }
 
     @FXML
@@ -42,8 +44,9 @@ public class HomeController {
     }
 
     @FXML
-    void ActionOnShopButton(ActionEvent event) {
-
+    void ActionOnShopButton(ActionEvent event) throws IOException {
+        AppMain m = new AppMain();
+        m.changeScene("Shop.fxml");
     }
 
     @FXML
