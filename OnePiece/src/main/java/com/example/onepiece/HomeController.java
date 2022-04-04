@@ -36,8 +36,9 @@ public class HomeController {
     }
 
     @FXML
-    void ActionOnListButton(ActionEvent event) {
-
+    void ActionOnListButton(ActionEvent event) throws IOException {
+        AppMain m = new AppMain();
+        m.changeScene("AdminList.fxml");
     }
 
     @FXML
