@@ -12,8 +12,6 @@ public class HomeController {
     @FXML
     private Button checkoutButton;
     @FXML
-    private Button homeButton;
-    @FXML
     private Button listButton;
     @FXML
     private Button logoutButton;
@@ -29,12 +27,6 @@ public class HomeController {
     @FXML
     void ActionOnDarkModeButton(ActionEvent event) {
 
-    }
-
-    @FXML
-    void ActionOnHomeButton(ActionEvent event) throws IOException {
-        AppMain m = new AppMain();
-        m.changeScene("HomePage.fxml");
     }
 
     @FXML
