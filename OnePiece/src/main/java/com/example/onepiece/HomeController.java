@@ -23,7 +23,7 @@ public class HomeController {
     @FXML
     void ActionOnCheckoutButton(ActionEvent event) throws IOException {
         AppMain m = new AppMain();
-        m.changeScene("Checkout.fxml");
+        m.changeScene("CheckOut.fxml");
     }
 
     @FXML
