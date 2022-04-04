@@ -38,8 +38,9 @@ public class CheckOutController {
     }
 
     @FXML
-    void ActionOnHomeButton(ActionEvent event) {
-
+    void ActionOnHomeButton(ActionEvent event) throws IOException {
+        AppMain m = new AppMain();
+        m.changeScene("HomePage.fxml");
     }
 
     @FXML
