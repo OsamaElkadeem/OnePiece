@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.CheckOutController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="163.0" style="-fx-background-color: #e78019;" BorderPane.alignment="CENTER">
          <children>
@@ -20,7 +20,7 @@
                         <Font name="SansSerif Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Back" textAlignment="CENTER">
+                  <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Home" textAlignment="CENTER">
                      <font>
                         <Font name="SansSerif Bold" size="18.0" />
                      </font>
@@ -41,7 +41,7 @@
                   <Font name="SansSerif Italic" size="13.0" />
                </font>
             </Label>
-            <Button fx:id="logoutButton" layoutX="617.0" layoutY="13.0" mnemonicParsing="false" onAction="#ActionOnLogoutButton" style="-fx-background-color: #e78019;" text="Logout" underline="true">
+            <Button fx:id="logoutButton" layoutX="617.0" layoutY="13.0" mnemonicParsing="false" onAction="#ActionOnLogoutButton" style="-fx-background-color: #e78019;" text="Sign Out" underline="true">
                <font>
                   <Font name="SansSerif Regular" size="13.0" />
                </font>
