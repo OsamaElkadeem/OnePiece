@@ -11,44 +11,56 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.AdminController">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.AdminController">
    <top>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <HBox alignment="CENTER_RIGHT" layoutX="1.0" prefHeight="50.0" prefWidth="700.0" spacing="10.0" style="-fx-background-color: #e78019;">
-            <Button id="home" fx:id="homeButton" mnemonicParsing="false" onAction="#ActionOnHomeButton" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" stylesheets="@css.css" text="Home" />
-            <Button id="logout" fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" stylesheets="@css.css" text="Logout" />
+         <HBox alignment="CENTER_RIGHT" layoutX="1.0" prefHeight="50.0" prefWidth="700.0" spacing="10.0"
+               style="-fx-background-color: #e78019;">
+            <Button id="home" fx:id="homeButton" mnemonicParsing="false" onAction="#ActionOnHomeButton"
+                    prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Home"/>
+            <Button id="logout" fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton"
+                    prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Logout"/>
          </HBox>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="450.0" prefWidth="133.0" BorderPane.alignment="CENTER">
          <VBox alignment="CENTER" layoutX="17.0" layoutY="138.0" prefHeight="200.0" prefWidth="100.0" spacing="50.0">
-            <Button id="search" fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton" prefHeight="25.0" prefWidth="90.0" stylesheets="@css.css" text="Search" />
-            <Button id="addItem" fx:id="addItemButton" mnemonicParsing="false" onAction="#ActionOnAddItemButton" prefHeight="25.0" prefWidth="90.0" stylesheets="@css.css" text="Add Item" />
-            <Button id="removeItem" fx:id="removeItemButton" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" prefHeight="25.0" prefWidth="90.0" stylesheets="@css.css" text="Remove Item" />
+            <Button id="search" fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton"
+                    prefHeight="25.0" prefWidth="90.0" text="Search"/>
+            <Button id="addItem" fx:id="addItemButton" mnemonicParsing="false" onAction="#ActionOnAddItemButton"
+                    prefHeight="25.0" prefWidth="90.0" text="Add Item"/>
+            <Button id="removeItem" fx:id="removeItemButton" mnemonicParsing="false"
+                    onAction="#ActionOnRemoveItemButton" prefHeight="25.0" prefWidth="90.0" text="Remove Item"/>
          </VBox>
          <Label layoutX="18.0" layoutY="14.0" text="Admin Page" textAlignment="CENTER">
             <font>
-               <Font size="18.0" />
+               <Font size="18.0"/>
             </font>
          </Label>
       </AnchorPane>
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <ListView id="itemList" fx:id="itemList" editable="true" layoutX="46.0" layoutY="148.0" prefHeight="257.0" prefWidth="476.0" />
-         <TextField id="itemID" fx:id="itemID" layoutX="65.0" layoutY="41.0" prefHeight="25.0" prefWidth="90.0" styleClass="textfields" stylesheets="@css.css" />
-         <Label layoutX="46.0" layoutY="45.0" text="ID:" />
-         <TextField id="priceTesco" fx:id="priceTesco" layoutX="65.0" layoutY="102.0" prefHeight="25.0" prefWidth="90.0" styleClass="textfields" stylesheets="@css.css" />
-         <Label layoutX="46.0" layoutY="81.0" text="Tesco:" />
-         <ChoiceBox id="itemCategory" fx:id="itemCategory" layoutX="387.0" layoutY="41.0" prefHeight="25.0" prefWidth="135.0" styleClass="choicebox" stylesheets="@css.css" />
-         <TextField id="priceSpar" fx:id="priceSpar" layoutX="239.0" layoutY="102.0" prefHeight="25.0" prefWidth="90.0" styleClass="textfields" stylesheets="@css.css" />
-         <Label layoutX="209.0" layoutY="81.0" text="Spar:" />
-         <TextField id="priceAldi" fx:id="priceAldi" layoutX="432.0" layoutY="102.0" prefHeight="25.0" prefWidth="90.0" styleClass="textfields" stylesheets="@css.css" />
-         <Label layoutX="413.0" layoutY="81.0" text="Aldi:" />
-         <TextField id="itemName" fx:id="itemName" layoutX="215.0" layoutY="41.0" prefHeight="25.0" prefWidth="90.0" styleClass="textfields" stylesheets="@css.css" />
-         <Label layoutX="174.0" layoutY="45.0" text="Name:" />
-         <Label layoutX="329.0" layoutY="45.0" text="Category:" />
+         <ListView id="itemList" fx:id="itemList" editable="true" layoutX="46.0" layoutY="148.0" prefHeight="257.0"
+                   prefWidth="476.0"/>
+         <TextField id="itemID" fx:id="itemID" layoutX="65.0" layoutY="41.0" prefHeight="25.0" prefWidth="90.0"/>
+         <Label layoutX="46.0" layoutY="45.0" text="ID:"/>
+         <TextField id="priceTesco" fx:id="priceTesco" layoutX="65.0" layoutY="102.0" prefHeight="25.0"
+                    prefWidth="90.0"/>
+         <Label layoutX="46.0" layoutY="81.0" text="Tesco:"/>
+         <ChoiceBox id="itemCategory" fx:id="itemCategory" layoutX="387.0" layoutY="41.0" prefHeight="25.0"
+                    prefWidth="135.0"/>
+         <TextField id="priceSpar" fx:id="priceSpar" layoutX="239.0" layoutY="102.0" prefHeight="25.0"
+                    prefWidth="90.0"/>
+         <Label layoutX="209.0" layoutY="81.0" text="Spar:"/>
+         <TextField id="priceAldi" fx:id="priceAldi" layoutX="432.0" layoutY="102.0" prefHeight="25.0"
+                    prefWidth="90.0"/>
+         <Label layoutX="413.0" layoutY="81.0" text="Aldi:"/>
+         <TextField id="itemName" fx:id="itemName" layoutX="215.0" layoutY="41.0" prefHeight="25.0" prefWidth="90.0"/>
+         <Label layoutX="174.0" layoutY="45.0" text="Name:"/>
+         <Label layoutX="329.0" layoutY="45.0" text="Category:"/>
       </AnchorPane>
    </center>
 </BorderPane>
