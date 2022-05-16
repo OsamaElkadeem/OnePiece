@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a71be89-d114-4af0-8eec-2e68b2053e16" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Java__JFoenix.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/font_awesome_6_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/css.css" afterDir="false" />
@@ -12,6 +13,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/AdminList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/AdminList.fxml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/onepiece/ShoppingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/onepiece/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/onepiece/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/onepiece/ShoppingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/ShoppingCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/ShoppingCart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/onepiece/CheckOutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/onepiece/CheckOutController.class" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +31,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -40,10 +58,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/font-awesome-6.1.0.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
   </component>
   <component name="RunManager" selected="Application.AppMain">
     <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -138,5 +160,12 @@
         </entry>
       </map>
     </option>
+<<<<<<< Updated upstream
+=======
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+>>>>>>> Stashed changes
   </component>
 </project>
