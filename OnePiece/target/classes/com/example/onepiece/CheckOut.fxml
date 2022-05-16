@@ -20,6 +20,8 @@
                         <Font name="SansSerif Bold" size="16.0" />
                      </font>
                   </Button>
+                  <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Back" textAlignment="CENTER">
+                  </Button>
                   <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Home" textAlignment="CENTER">
                      <font>
                         <Font name="SansSerif Bold" size="18.0" />
