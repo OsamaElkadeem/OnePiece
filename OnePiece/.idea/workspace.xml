@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a71be89-d114-4af0-8eec-2e68b2053e16" name="Changes" comment="Added admin list page designed on Scene Builder.&#10;Edited &quot;List&quot; button on &quot;Home&quot; page to take you to admin list.">
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/onepiece/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/onepiece/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/onepiece/AdminList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/onepiece/AdminList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/onepiece/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/onepiece/HomeController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="288wsrVQL2NkKcvN7xSBbhcu04y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.onepiece.AppMain" />
+      <module name="OnePiece" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.onepiece.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a71be89-d114-4af0-8eec-2e68b2053e16" name="Changes" comment="Added admin list page designed on Scene Builder.&#10;Edited &quot;List&quot; button on &quot;Home&quot; page to take you to admin list." />
+      <created>1650611735496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650611735496</updated>
+      <workItem from="1650611740186" duration="225000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
