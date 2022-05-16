@@ -38,7 +38,7 @@ public class HomeController {
     @FXML
     void ActionOnShopButton(ActionEvent event) throws IOException {
         AppMain m = new AppMain();
-        m.changeScene("Shop.fxml");
+        m.changeScene("ShoppingCart.fxml");
     }
 
     @FXML

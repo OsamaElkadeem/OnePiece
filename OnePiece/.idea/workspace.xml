@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a71be89-d114-4af0-8eec-2e68b2053e16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/onepiece/ShoppingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/onepiece/CheckOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/onepiece/CheckOutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/onepiece/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/onepiece/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/onepiece/ShoppingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/ShoppingCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/onepiece/ShoppingCart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/onepiece/CheckOutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/onepiece/CheckOutController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +20,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -123,6 +135,18 @@
       <updated>1649104844366</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
