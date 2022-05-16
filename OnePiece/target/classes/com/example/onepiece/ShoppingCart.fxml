@@ -12,57 +12,54 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <SplitPane dividerPositions="0.13282504012841093" layoutX="387.0" layoutY="50.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: E5B665;">
-               <children>
-                  <Button fx:id="logoutButton" layoutX="616.0" layoutY="19.0" mnemonicParsing="false" onAction="#ActionOnLogoutButton" text="Logout" />
-                  <Button fx:id="homeButton" layoutX="523.0" layoutY="19.0" mnemonicParsing="false" onAction="#ActionOnHomeButton" text="Home" />
-                  <ImageView fitHeight="37.0" fitWidth="82.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../target/classes/imgs/logo.jpg" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="699.0">
-               <children>
-                  <VBox layoutX="14.0" layoutY="131.0" prefHeight="204.0" prefWidth="100.0">
-                     <children>
-                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton" prefHeight="30.0" prefWidth="102.0" text="Search">
-                           <VBox.margin>
-                              <Insets bottom="20.0" />
-                           </VBox.margin>
-                        </Button>
-                        <Button fx:id="addItemButton" mnemonicParsing="false" onAction="#ActionOnAddItemButton" prefHeight="30.0" prefWidth="100.0" text="Add Item">
-                           <VBox.margin>
-                              <Insets bottom="20.0" />
-                           </VBox.margin>
-                        </Button>
-                        <Button fx:id="ResetButton" mnemonicParsing="false" onAction="#ActionOnResetButton" prefHeight="30.0" prefWidth="104.0" text="Reset">
-                           <VBox.margin>
-                              <Insets bottom="20.0" />
-                           </VBox.margin>
-                        </Button>
-                        <Button fx:id="CheckoutButton" mnemonicParsing="false" onAction="#ActionOnCheckoutButton" prefHeight="30.0" prefWidth="104.0" text="Checkout" />
-                     </children>
-                  </VBox>
-                  <Label layoutX="227.0" layoutY="82.0" text="ID" />
-                  <TextField layoutX="256.0" layoutY="74.0" prefHeight="18.0" prefWidth="70.0" />
-                  <Label layoutX="350.0" layoutY="82.0" text="Category" />
-                  <ChoiceBox layoutX="429.0" layoutY="77.0" prefHeight="28.0" prefWidth="41.0" />
-                  <VBox layoutX="156.0" layoutY="171.0" prefHeight="200.0" prefWidth="517.0">
-                     <children>
-                        <TextArea prefHeight="201.0" prefWidth="518.0" />
-                     </children>
-                  </VBox>
-                  <Label layoutX="489.0" layoutY="82.0" text="Item Name" />
-                  <ChoiceBox layoutX="576.0" layoutY="77.0" prefHeight="28.0" prefWidth="42.0" />
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.ShoppingController">
+   <SplitPane dividerPositions="0.13282504012841093" layoutX="387.0" layoutY="50.0" orientation="VERTICAL"
+              prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0"
+                  style="-fx-background-color: E5B665;">
+         <Button fx:id="logoutButton" layoutX="616.0" layoutY="19.0" mnemonicParsing="false"
+                 onAction="#ActionOnLogoutButton" text="Logout"/>
+         <Button fx:id="homeButton" layoutX="523.0" layoutY="19.0" mnemonicParsing="false"
+                 onAction="#ActionOnHomeButton" text="Home"/>
+         <ImageView fitHeight="37.0" fitWidth="82.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@../../../../../../target/classes/imgs/logo.jpg"/>
+         </ImageView>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="699.0">
+         <VBox layoutX="14.0" layoutY="131.0" prefHeight="204.0" prefWidth="100.0">
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton"
+                    prefHeight="30.0" prefWidth="102.0" text="Search">
+               <VBox.margin>
+                  <Insets bottom="20.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="addItemButton" mnemonicParsing="false" onAction="#ActionOnAddItemButton"
+                    prefHeight="30.0" prefWidth="100.0" text="Add Item">
+               <VBox.margin>
+                  <Insets bottom="20.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="ResetButton" mnemonicParsing="false" onAction="#ActionOnResetButton"
+                    prefHeight="30.0" prefWidth="104.0" text="Reset">
+               <VBox.margin>
+                  <Insets bottom="20.0"/>
+               </VBox.margin>
+            </Button>
+            <Button fx:id="CheckoutButton" mnemonicParsing="false" onAction="#ActionOnCheckoutButton"
+                    prefHeight="30.0" prefWidth="104.0" text="Checkout"/>
+         </VBox>
+         <Label layoutX="227.0" layoutY="82.0" text="ID"/>
+         <TextField layoutX="256.0" layoutY="74.0" prefHeight="18.0" prefWidth="70.0"/>
+         <Label layoutX="350.0" layoutY="82.0" text="Category"/>
+         <ChoiceBox layoutX="429.0" layoutY="77.0" prefHeight="28.0" prefWidth="41.0"/>
+         <VBox layoutX="156.0" layoutY="171.0" prefHeight="200.0" prefWidth="517.0">
+            <TextArea prefHeight="201.0" prefWidth="518.0"/>
+         </VBox>
+         <Label layoutX="489.0" layoutY="82.0" text="Item Name"/>
+         <ChoiceBox layoutX="576.0" layoutY="77.0" prefHeight="28.0" prefWidth="42.0"/>
+      </AnchorPane>
+   </SplitPane>
 </AnchorPane>
