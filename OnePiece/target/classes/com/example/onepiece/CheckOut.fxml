@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.CheckOutController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.CheckOutController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="163.0" style="-fx-background-color: #e78019;" BorderPane.alignment="CENTER">
          <children>
@@ -19,8 +19,6 @@
                      <font>
                         <Font name="SansSerif Bold" size="16.0" />
                      </font>
-                  </Button>
-                  <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Back" textAlignment="CENTER">
                   </Button>
                   <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Home" textAlignment="CENTER">
                      <font>
