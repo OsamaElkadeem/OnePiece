@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.HomeController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
          <VBox layoutY="114.0" prefHeight="272.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="114.0">
@@ -35,16 +35,16 @@
          <children>
             <HBox alignment="TOP_RIGHT" layoutX="-66.0" prefHeight="39.0" prefWidth="521.0" style="-fx-background-color: #e78019;">
                <children>
-                  <Button fx:id="DarkModeButton" mnemonicParsing="false" onAction="#ActionOnDarkModeButton" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #e78019;" text="Dark Mode">
+                  <Button fx:id="DarkModeButton" mnemonicParsing="false" onAction="#ActionOnDarkModeButton" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #e78019;" text="Dark Mode">
                      <font>
                         <Font name="Times New Roman Bold" size="14.0" />
                      </font>
                   </Button>
                   <AnchorPane>
                      <children>
-                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #e78019;" text="Logout">
+                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #e78019;" text="Logout">
                            <font>
-                              <Font name="Times New Roman Bold" size="14.0" />
+                              <Font name="System Bold" size="14.0" />
                            </font>
                         </Button>
                      </children>

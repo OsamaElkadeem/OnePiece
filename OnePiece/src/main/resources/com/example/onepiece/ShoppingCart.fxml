@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<<<<<<< Updated upstream
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.ShoppingController">
    <SplitPane dividerPositions="0.13282504012841093" layoutX="387.0" layoutY="50.0" orientation="VERTICAL"
@@ -28,19 +27,6 @@
                     preserveRatio="true">
             <Image url="@../../../../../../target/classes/imgs/logo.jpg"/>
          </ImageView>
-=======
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.ShopController">
-   <top>
-      <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <HBox alignment="CENTER_RIGHT" layoutX="1.0" prefHeight="50.0" prefWidth="700.0" spacing="10.0"
-               style="-fx-background-color: #e78019;">
-            <Button id="home" fx:id="homeButton" mnemonicParsing="false" onAction="#ActionOnHomeButton"
-                    prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Home"/>
-            <Button id="logout" fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton"
-                    prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Logout"/>
-         </HBox>
->>>>>>> Stashed changes
       </AnchorPane>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="699.0">
          <VBox layoutX="14.0" layoutY="131.0" prefHeight="204.0" prefWidth="100.0">
