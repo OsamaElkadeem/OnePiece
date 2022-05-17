@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c191866-2fd1-494e-9bf3-d7088360388a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/AppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/AppMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/CheckOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/CheckOutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/CheckOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/CheckOut.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AppMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AppMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/CheckOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/CheckOut.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/CheckOutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/CheckOutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/ShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/CheckOutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ConnectDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/ShoppingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/ItemDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/JpaItemDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ShoppingController.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

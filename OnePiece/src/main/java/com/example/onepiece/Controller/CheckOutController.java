@@ -32,8 +32,6 @@ public class CheckOutController extends AppMain{
     @FXML
     private Label tescoTotal;
 
-    @FXML
-    private Button show;
     
     @FXML
     private ListView<String> checkoutList;
@@ -85,11 +83,7 @@ public class CheckOutController extends AppMain{
 
     }
 
-    @FXML
-    void ActionOnShowButton(ActionEvent event) {
-        checkoutList.getItems().addAll(cart);
-        System.out.println(cart);
-    }
+
 
     @FXML
     void OnActionCheckoutList(ActionEvent event) {
