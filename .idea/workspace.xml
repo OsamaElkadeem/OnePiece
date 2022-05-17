@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c191866-2fd1-494e-9bf3-d7088360388a" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
@@ -42,11 +43,16 @@
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Model/JpaItemDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/module-info.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/AdminList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/AdminList.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/CheckOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/CheckOut.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/LoginForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/ShoppingCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/ShoppingCart.fxml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminList.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AppMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AppMain.class" afterDir="false" />
@@ -72,6 +78,8 @@
       <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Shop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/module-info.class" afterDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,20 +132,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/OnePiece/src/main/resources/META-INF" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/OnePieceProject/OnePieceProject"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\COLLEGE\4TH TERM\SOFTWARE DEVELOPMENT\PROJECT\OnePiece\OnePiece\src\main\resources\META-INF" />
@@ -175,7 +177,12 @@
       <workItem from="1652740705844" duration="1271000" />
       <workItem from="1652742468322" duration="117000" />
       <workItem from="1652742596641" duration="4670000" />
+<<<<<<< Updated upstream
       <workItem from="1652749993193" duration="138000" />
+=======
+      <workItem from="1652749993193" duration="1750000" />
+      <workItem from="1652758931515" duration="1386000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextArea?>
@@ -12,6 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
+<<<<<<< Updated upstream
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.ShoppingController">
    <SplitPane dividerPositions="0.13282504012841093" layoutX="387.0" layoutY="50.0" orientation="VERTICAL"
@@ -63,3 +63,54 @@
       </AnchorPane>
    </SplitPane>
 </AnchorPane>
+=======
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.ShopController">
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
+         <HBox alignment="CENTER_RIGHT" layoutX="180.0" prefHeight="39.0" prefWidth="520.0" spacing="10.0" style="-fx-background-color: #e78019;">
+            <Button id="logout" fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Logout" />
+         </HBox>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="474.0" prefWidth="170.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
+         <VBox alignment="CENTER" layoutX="1.0" layoutY="29.0" prefHeight="388.0" prefWidth="178.0" spacing="50.0">
+            <Button id="home" fx:id="homeButton" mnemonicParsing="false" onAction="#ActionOnHomeButton" prefHeight="41.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" text="Home">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button id="search" fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton" prefHeight="26.0" prefWidth="181.0" style="-fx-background-color: #cd580b;" text="Search">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button id="addItem" fx:id="addItemButton" mnemonicParsing="false" onAction="#ActionOnAddItemButton" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" text="Add Item">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button id="removeItem" fx:id="removeItemButton" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #cd580b;" text="Remove Item">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+             <Button id="checkOut" fx:id="CheckOutButton" mnemonicParsing="false" onAction="#ActionOnCheckOutButton" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" text="CheckOut">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </VBox>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <ListView id="itemList" fx:id="itemList" editable="true" layoutX="23.0" layoutY="146.0" prefHeight="257.0" prefWidth="476.0" />
+           
+         <TextField id="itemName" fx:id="itemName" layoutX="216.0" layoutY="103.0" prefHeight="25.0" prefWidth="90.0" />
+         <Label layoutX="181.0" layoutY="85.0" text="Name:" />
+         <Label layoutX="32.0" layoutY="23.0" text="Shop Page" textAlignment="CENTER" textFill="#e26b1e">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+        
+      </AnchorPane>
+   </center>
+</BorderPane>
+>>>>>>> Stashed changes
