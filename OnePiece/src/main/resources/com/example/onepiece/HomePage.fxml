@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.HomeController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
          <VBox layoutY="114.0" prefHeight="272.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="114.0">
@@ -18,11 +18,6 @@
                </font>
             </Button>
             <Button fx:id="checkoutButton" layoutX="10.0" layoutY="128.0" mnemonicParsing="false" onAction="#ActionOnCheckoutButton" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #cd580b;" text="Checkout">
-               <font>
-                  <Font name="System Bold Italic" size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="listButton" layoutX="10.0" layoutY="128.0" mnemonicParsing="false" onAction="#ActionOnListButton" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #cd580b;" text="List">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>
