@@ -36,7 +36,7 @@
          <TextField fx:id="username" layoutX="121.0" layoutY="219.0" onKeyPressed="#keyPressed" promptText="Username" />
          <PasswordField fx:id="password" layoutX="122.0" layoutY="265.0" onKeyPressed="#keyPressed" promptText="Password" />
          <Label fx:id="label" layoutX="122.0" layoutY="305.0" textFill="RED" />
-         <Button fx:id="loginButton" layoutX="165.0" layoutY="357.0" mnemonicParsing="false" onAction="#ActionOnLoginButton" style="-fx-background-color: #e58018;" text="Login">
+         <Button fx:id="loginButton" layoutX="165.0" layoutY="357.0" mnemonicParsing="false" onAction="#ActionOnLoginButton" onKeyPressed="#keyPressed" style="-fx-background-color: #e58018;" text="Login">
             <font>
                <Font size="16.0" />
             </font>
