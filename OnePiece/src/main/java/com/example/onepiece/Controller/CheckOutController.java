@@ -9,9 +9,10 @@ import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 
-public class CheckOutController {
+public class CheckOutController extends AppMain{
 
     @FXML
     private Label aldiTotal;
@@ -30,11 +31,28 @@ public class CheckOutController {
 
     @FXML
     private Label tescoTotal;
+
+    @FXML
+    private Button show;
     
     @FXML
     private ListView<String> checkoutList;
-    
-    
+
+    ArrayList<String> cart = new ArrayList<>();
+
+    ShopController shop = new ShopController();
+
+    public ArrayList<String> getCart() {
+        return cart;
+    }
+
+    public void setCart(ArrayList<String> cart) {
+        this.cart = shop.getCartItems();
+
+    }
+
+
+
     @FXML
     void ActionOnAldiTotal(MouseEvent event) {
 
@@ -68,9 +86,17 @@ public class CheckOutController {
     }
 
     @FXML
-    void OnActionCheckoutList(ActionEvent event) {
-
+    void ActionOnShowButton(ActionEvent event) {
+        checkoutList.getItems().addAll(cart);
+        System.out.println(cart);
     }
+
+    @FXML
+    void OnActionCheckoutList(ActionEvent event) {
+            checkoutList.getItems().addAll(cart);
+    }
+
+
 
     @FXML
     public void ActionOnDarkModeButton(ActionEvent actionEvent) {

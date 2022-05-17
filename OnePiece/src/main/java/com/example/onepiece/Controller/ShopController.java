@@ -21,7 +21,9 @@ import java.util.logging.Logger;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
-public class ShopController{
+import static java.lang.Integer.parseInt;
+
+public class ShopController extends AppMain{
 
     @FXML
     private Button homeButton;
@@ -83,16 +85,58 @@ public class ShopController{
                 items.add("id: " + id + "\tname: " + item + "\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
             }
             itemList.getItems().addAll(items);
+
+
         } catch (SQLException ex) {
             Logger.getLogger(AdminController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
+    ArrayList<String> cartItems = new ArrayList<>();
+
+    public ArrayList<String> getCartItems() {
+        return cartItems;
+
+    }
+
+    public void setCartItems(ArrayList<String> cartItems) {
+        this.cartItems = cartItems;
+    }
+
     @FXML
     void ActionOnAddItemButton(ActionEvent event) {
-        String selectedItem = itemList.getSelectionModel().getSelectedItem();
-        selectedItems.add(selectedItem);
-        System.out.println(selectedItem);
+        try {
+            String cartName = itemName.getText();
+            String query;
+            CheckOutController check = new CheckOutController();
+            stmt = c.createStatement();
+            itemList.getItems().clear();
+            if (!cartName.equals("")) {
+                query = String.format("SELECT items.item_id, items.name as item_name, category, price, shops.name as shop_name FROM items JOIN prices ON items.item_id = prices.item_id JOIN shops ON prices.shop_id = shops.shop_id WHERE items.name = '%s';", cartName);
+            } else {
+                query = "SELECT items.item_id, items.name as item_name, category, price, shops.name as shop_name FROM items JOIN prices ON items.item_id = prices.item_id JOIN shops ON prices.shop_id = shops.shop_id";
+            }
+            rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                int id = rs.getInt("item_id");
+                String item = rs.getString("item_name");
+                String category = rs.getString("category");
+                float price = rs.getInt("price");
+                String shop = rs.getString("shop_name");
+                System.out.println("id: " + id + "\tname: " + item + "\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
+                cartItems.add("id: " + id + "\tname: " + item + "\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
+            }
+
+
+            itemList.getItems().addAll(cartItems);
+            System.out.println(cartItems);
+            check.setCart(cartItems);
+
+
+        } catch (SQLException ex) {
+
+            Logger.getLogger(AdminController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @FXML
@@ -107,4 +151,5 @@ public class ShopController{
         m.changeScene("CheckOut.fxml");
 
     }
+
 }

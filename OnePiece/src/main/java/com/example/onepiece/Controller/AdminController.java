@@ -48,7 +48,7 @@ public class AdminController implements Initializable{
     @FXML 
     private ChoiceBox<String> itemCategory;
     
-    private String[] categories = {"Fruits", "Vegetables", "Meat", "Drinks"};
+    private String[] categories = {"Fruits", "Vegetables", "Dairy", "Drinks", "Snacks"};
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

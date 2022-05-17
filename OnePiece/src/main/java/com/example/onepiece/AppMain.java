@@ -1,5 +1,7 @@
 package com.example.onepiece;
 
+import com.example.onepiece.Controller.CheckOutController;
+import com.example.onepiece.Controller.ShopController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -29,5 +31,10 @@ public class AppMain extends Application {
     public static void main(String[] args) {
         
         launch();
+
+        ShopController shop = new ShopController();
+        CheckOutController check = new CheckOutController();
+        check.setCart(shop.getCartItems());
+
     }
 }

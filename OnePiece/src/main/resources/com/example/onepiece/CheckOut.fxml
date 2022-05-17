@@ -24,6 +24,11 @@
                         <Insets left="25.0" />
                      </VBox.margin>
                   </Button>
+                  <Button fx:id="Show" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnShowButton" style="-fx-background-color: #cd580b;" text="Show" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Button>
                   <Button fx:id="removeItem" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" style="-fx-background-color: #cd580b;" text="Remove Item">
                      <font>
                         <Font name="SansSerif Bold" size="18.0" />
