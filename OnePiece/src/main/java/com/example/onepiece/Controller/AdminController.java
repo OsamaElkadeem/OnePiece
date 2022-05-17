@@ -81,17 +81,20 @@ public class AdminController implements Initializable{
             ArrayList<String> items = new ArrayList<>();
             itemList.getItems().clear();
             if(!searchName.equals("")){
-                query = String.format("SELECT * FROM items WHERE name = '%s' JOIN prices ON items.item_id = prices.item_id JOIN shops ON ;", searchName);
+                query = String.format("SELECT items.item_id, items.name as item_name, category, price, shops.name as shop_name FROM items JOIN prices ON items.item_id = prices.item_id JOIN shops ON prices.shop_id = shops.shop_id WHERE items.name = '%s';", searchName);
             }
             else{
-                query =  "SELECT * FROM items;";
+                query =  "SELECT items.item_id, items.name as item_name, category, price, shops.name as shop_name FROM items JOIN prices ON items.item_id = prices.item_id JOIN shops ON prices.shop_id = shops.shop_id";
             }
             rs = stmt.executeQuery(query);
             while (rs.next()) {
                 int id = rs.getInt("item_id");
-                String name = rs.getString("name");
+                String item = rs.getString("item_name");
                 String category = rs.getString("category");
-                items.add("id: " + id + "\tname: " + name +"\tcategory: " + category);
+                float price = rs.getInt("price");
+                String shop = rs.getString("shop_name");
+                System.out.println("id: " + id + "\tname: " + item +"\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
+                items.add("id: " + id + "\tname: " + item +"\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
             }
             itemList.getItems().addAll(items);
         } catch (SQLException ex) {

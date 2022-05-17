@@ -12,6 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.AdminController">
    <top>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
@@ -27,13 +28,25 @@
          <HBox alignment="CENTER_RIGHT" layoutX="178.0" prefHeight="39.0" prefWidth="521.0" spacing="10.0" style="-fx-background-color: #e78019;">
             <Button id="logout" fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Logout" />
 >>>>>>> Stashed changes
+=======
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.AdminController">
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
+         <HBox alignment="CENTER_RIGHT" layoutX="178.0" prefHeight="39.0" prefWidth="522.0" spacing="10.0" style="-fx-background-color: #e78019;">
+            <Button id="logout" fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #e78019;" text="Logout" />
+>>>>>>> Stashed changes
          </HBox>
       </AnchorPane>
    </top>
    <left>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <AnchorPane prefHeight="460.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
          <VBox alignment="CENTER" layoutY="44.0" prefHeight="322.0" prefWidth="177.0" spacing="50.0">
+=======
+      <AnchorPane prefHeight="450.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
+         <VBox alignment="CENTER" layoutY="49.0" prefHeight="322.0" prefWidth="179.0" spacing="50.0">
+>>>>>>> Stashed changes
 =======
       <AnchorPane prefHeight="450.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
          <VBox alignment="CENTER" layoutY="49.0" prefHeight="322.0" prefWidth="179.0" spacing="50.0">
@@ -42,6 +55,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <Button id="search" fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton" prefHeight="26.0" prefWidth="179.0" style="-fx-background-color: #cd580b;" text="Search">
                <font>
@@ -53,6 +67,8 @@
                </font></Button>
             <Button id="removeItem" fx:id="removeItemButton" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #cd580b;" text="Remove Item">
 =======
+=======
+>>>>>>> Stashed changes
             <Button id="search" fx:id="searchButton" mnemonicParsing="false" onAction="#ActionOnSearchButton" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #cd580b;" text="Search">
                <font>
                   <Font size="18.0" />
@@ -62,6 +78,9 @@
                   <Font size="18.0" />
                </font></Button>
             <Button id="removeItem" fx:id="removeItemButton" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" text="Remove Item">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                <font>
                   <Font size="18.0" />
@@ -71,6 +90,7 @@
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
          <ListView id="itemList" fx:id="itemList" editable="true" layoutX="22.0" layoutY="178.0" prefHeight="257.0" prefWidth="476.0" />
          <TextField id="itemID" fx:id="itemID" layoutX="65.0" layoutY="93.0" prefHeight="25.0" prefWidth="90.0" />
@@ -87,12 +107,18 @@
          <Label layoutX="328.0" layoutY="67.0" text="Category:" />
          <Label layoutX="35.0" layoutY="14.0" text="Admin Page" textAlignment="CENTER" textFill="#e26b1e">
 =======
+=======
+>>>>>>> Stashed changes
          <ListView id="itemList" fx:id="itemList" editable="true" layoutX="22.0" layoutY="188.0" prefHeight="257.0" prefWidth="476.0" />
          <TextField id="itemID" fx:id="itemID" layoutX="65.0" layoutY="90.0" prefHeight="25.0" prefWidth="90.0" />
          <Label layoutX="45.0" layoutY="67.0" text="ID:" />
          <TextField id="priceTesco" fx:id="priceTesco" layoutX="65.0" layoutY="155.0" prefHeight="25.0" prefWidth="90.0" />
          <Label layoutX="36.0" layoutY="137.0" text="Tesco:" />
+<<<<<<< Updated upstream
          <ChoiceBox id="itemCategory" fx:id="itemCategory" layoutX="379.0" layoutY="90.0" prefHeight="25.0" prefWidth="135.0" />
+=======
+         <ChoiceBox id="itemCategory" fx:id="itemCategory" layoutX="379.0" layoutY="90.0" prefHeight="25.0" prefWidth="116.0" />
+>>>>>>> Stashed changes
          <TextField id="priceSpar" fx:id="priceSpar" layoutX="235.0" layoutY="155.0" prefHeight="25.0" prefWidth="90.0" />
          <Label layoutX="208.0" layoutY="137.0" text="Spar:" />
          <TextField id="priceAldi" fx:id="priceAldi" layoutX="379.0" layoutY="155.0" prefHeight="25.0" prefWidth="90.0" />
@@ -101,6 +127,9 @@
          <Label layoutX="173.0" layoutY="67.0" text="Name:" />
          <Label layoutX="329.0" layoutY="67.0" text="Category:" />
          <Label layoutX="46.0" layoutY="21.0" text="Admin Page" textAlignment="CENTER" textFill="#e26b1e">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             <font>
                <Font size="24.0" />

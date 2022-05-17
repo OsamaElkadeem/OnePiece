@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.ShoppingController">
    <SplitPane dividerPositions="0.13282504012841093" layoutX="387.0" layoutY="50.0" orientation="VERTICAL"
@@ -65,6 +66,9 @@
 </AnchorPane>
 =======
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.ShopController">
+=======
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.ShopController">
+>>>>>>> Stashed changes
    <top>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
          <HBox alignment="CENTER_RIGHT" layoutX="180.0" prefHeight="39.0" prefWidth="520.0" spacing="10.0" style="-fx-background-color: #e78019;">
@@ -100,11 +104,19 @@
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+<<<<<<< Updated upstream
          <ListView id="itemList" fx:id="itemList" editable="true" layoutX="23.0" layoutY="146.0" prefHeight="257.0" prefWidth="476.0" />
            
          <TextField id="itemName" fx:id="itemName" layoutX="216.0" layoutY="103.0" prefHeight="25.0" prefWidth="90.0" />
          <Label layoutX="181.0" layoutY="85.0" text="Name:" />
          <Label layoutX="32.0" layoutY="23.0" text="Shop Page" textAlignment="CENTER" textFill="#e26b1e">
+=======
+         <ListView id="itemList" fx:id="itemList" editable="true" layoutX="23.0" layoutY="128.0" prefHeight="275.0" prefWidth="476.0" />
+           
+         <TextField id="itemName" fx:id="itemName" layoutX="64.0" layoutY="79.0" prefHeight="25.0" prefWidth="174.0" />
+         <Label layoutX="23.0" layoutY="83.0" text="Name:" />
+         <Label layoutX="23.0" layoutY="24.0" text="Shop Page" textAlignment="CENTER" textFill="#e26b1e">
+>>>>>>> Stashed changes
             <font>
                <Font size="24.0" />
             </font>
@@ -113,4 +125,7 @@
       </AnchorPane>
    </center>
 </BorderPane>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

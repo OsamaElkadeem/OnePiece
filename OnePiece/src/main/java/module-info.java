@@ -10,6 +10,7 @@ module com.example.onepiece {
     exports com.example.onepiece;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     exports com.example.onepiece.Controller;
     opens com.example.onepiece.Controller to javafx.fxml;
@@ -18,6 +19,13 @@ module com.example.onepiece {
 =======
     exports com.example.onepiece.Controller;
     opens com.example.onepiece.Controller to javafx.fxml;
+
+>>>>>>> Stashed changes
+=======
+    exports com.example.onepiece.Controller;
+    opens com.example.onepiece.Controller to javafx.fxml;
+    exports com.example.onepiece.Model;
+    opens com.example.onepiece.Model to javafx.fxml;
 
 >>>>>>> Stashed changes
 }

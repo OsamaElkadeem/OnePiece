@@ -7,7 +7,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+<<<<<<< Updated upstream
 import javafx.scene.input.KeyCode;
+=======
+>>>>>>> Stashed changes
 import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
@@ -34,6 +37,7 @@ public class LoginController {
     @FXML
     void keyPressed(KeyEvent event) throws IOException {
         switch (event.getCode()) {
+<<<<<<< Updated upstream
             case ENTER:
                 checkLogin();
                 break;
@@ -42,10 +46,18 @@ public class LoginController {
     }
 
 
+=======
+            case ENTER: checkLogin(); break;
+        }
+    }
+
+>>>>>>> Stashed changes
     private void checkLogin() throws IOException {
         AppMain m = new AppMain();
-        if ((username.getText().toString().equals("Admin") && password.getText().toString().equals("12345")) ||
-            (username.getText().toString().equals("User") && password.getText().toString().equals("1234"))){
+        if ((username.getText().equals("admin") && password.getText().equals("admin"))){
+            m.changeScene ("HomePageAdmin.fxml");
+        }
+        else if ((username.getText().equals("osama.elkadeem@gmail.com") && password.getText().equals("elkadeem12"))){
            m.changeScene ("HomePage.fxml");
         }
         else if (username.getText().isEmpty() && password.getText().isEmpty()){
