@@ -6,21 +6,17 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.CheckOutController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.CheckOutController">
    <left>
-      <AnchorPane prefHeight="500.0" prefWidth="163.0" style="-fx-background-color: #e78019;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="500.0" prefWidth="178.0" style="-fx-background-color: #cd580b;" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="200.0" prefWidth="100.0" spacing="150.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+            <VBox layoutX="20.0" layoutY="120.0" prefHeight="200.0" prefWidth="100.0" spacing="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
                <children>
-                  <Button fx:id="removeItem" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" style="-fx-background-color: #f5cc7f;" text="Remove Item">
-                     <font>
-                        <Font name="SansSerif Bold" size="16.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #f5cc7f;" text="Home" textAlignment="CENTER">
+                  <Button fx:id="homeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnHomeButton" style="-fx-background-color: #cd580b;" text="Home" textAlignment="CENTER">
                      <font>
                         <Font name="SansSerif Bold" size="18.0" />
                      </font>
@@ -28,42 +24,54 @@
                         <Insets left="25.0" />
                      </VBox.margin>
                   </Button>
+                  <Button fx:id="Show" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnShowButton" style="-fx-background-color: #cd580b;" text="Show" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="removeItem" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ActionOnRemoveItemButton" style="-fx-background-color: #cd580b;" text="Remove Item">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Button>
                </children>
             </VBox>
          </children>
       </AnchorPane>
    </left>
-   <top>
-      <AnchorPane prefHeight="49.0" prefWidth="700.0" style="-fx-background-color: #e78019;" BorderPane.alignment="CENTER">
-         <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="17.0" style="-fx-background-color: #e78019;" text="Report Page" underline="true">
-               <font>
-                  <Font name="SansSerif Italic" size="13.0" />
-               </font>
-            </Label>
-            <Button fx:id="logoutButton" layoutX="617.0" layoutY="13.0" mnemonicParsing="false" onAction="#ActionOnLogoutButton" style="-fx-background-color: #e78019;" text="Sign Out" underline="true">
-               <font>
-                  <Font name="SansSerif Regular" size="13.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
-   </top>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="39.0" prefWidth="522.0" style="-fx-background-color: #e78019;">
+               <children>
+                  <Button fx:id="DarkModeButton" mnemonicParsing="false" onAction="#ActionOnDarkModeButton" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #e78019;" text="Dark Mode">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane>
+                     <children>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#ActionOnLogoutButton" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #e78019;" text="Logout">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
             <ListView fx:id="checkoutList" fixedCellSize="1.0" layoutX="34.0" layoutY="126.0" onEditStart="#OnActionCheckoutList" prefHeight="280.0" prefWidth="497.0" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-            <Label layoutX="20.0" layoutY="32.0" prefHeight="43.0" prefWidth="382.0" text="Shopping Bag Contents" underline="true">
+            <Label layoutX="20.0" layoutY="56.0" prefHeight="43.0" prefWidth="382.0" text="Shopping Bag Contents" textFill="#e26b1e">
                <font>
-                  <Font name="SansSerif Bold Italic" size="18.0" />
+                  <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="20.0" layoutY="395.0" prefHeight="35.0" prefWidth="64.0" text="Spar Total: " />
-            <Label layoutX="165.0" layoutY="395.0" prefHeight="35.0" prefWidth="104.0" text="Tesco Total: " />
-            <Label layoutX="350.0" layoutY="395.0" prefHeight="35.0" prefWidth="104.0" text="Aldi Total:" />
-            <Label fx:id="sparTotal" layoutX="84.0" layoutY="395.0" onDragDetected="#ActionOnSparTotal" prefHeight="35.0" prefWidth="64.0" text="0" />
-            <Label fx:id="tescoTotal" layoutX="237.0" layoutY="395.0" onDragDetected="#ActionOnTescoTotal" prefHeight="35.0" prefWidth="64.0" text="0" />
-            <Label fx:id="aldiTotal" layoutX="410.0" layoutY="395.0" onDragDetected="#ActionOnAldiTotal" prefHeight="35.0" prefWidth="64.0" text="0" />
+            <Label layoutX="20.0" layoutY="430.0" prefHeight="35.0" prefWidth="64.0" text="Spar Total: " />
+            <Label layoutX="159.0" layoutY="430.0" prefHeight="35.0" prefWidth="104.0" text="Tesco Total: " />
+            <Label layoutX="350.0" layoutY="430.0" prefHeight="35.0" prefWidth="104.0" text="Aldi Total:" />
+            <Label fx:id="sparTotal" layoutX="84.0" layoutY="430.0" onDragDetected="#ActionOnSparTotal" prefHeight="35.0" prefWidth="64.0" text="0" />
+            <Label fx:id="tescoTotal" layoutX="231.0" layoutY="430.0" onDragDetected="#ActionOnTescoTotal" prefHeight="35.0" prefWidth="64.0" text="0" />
+            <Label fx:id="aldiTotal" layoutX="411.0" layoutY="430.0" onDragDetected="#ActionOnAldiTotal" prefHeight="35.0" prefWidth="64.0" text="0" />
          </children>
       </AnchorPane>
    </center>
