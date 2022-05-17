@@ -1,21 +1,27 @@
 package com.example.onepiece.Controller;
 
 import com.example.onepiece.AppMain;
-import com.example.onepiece.Model.*;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import com.example.onepiece.Model.ConnectDatabase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.io.IOException;
-import java.util.List;
+import static java.lang.Integer.parseInt;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 
-
-public class AdminController {
+public class AdminController implements Initializable{
 
     @FXML
     private Button homeButton;
@@ -28,53 +34,113 @@ public class AdminController {
     @FXML
     private Button removeItemButton;
     @FXML
-    private TableView<Item> itemTable;
-    @FXML private TableColumn<Item, Integer> itemId;
-    @FXML private TableColumn<Item, String> itemName;
-    @FXML private TableColumn<Item, Integer> priceTesco;
-    @FXML private TableColumn<Item, Integer> priceSpar;
-    @FXML private TableColumn<Item, Integer> priceAldi;
-
-
-    @FXML void listButtonPressed() {
-        ItemDAO idao = new JpaItemDAO();
-        List<Item> itemList = idao.listItems();
-        ObservableList<Item> ol = FXCollections.observableArrayList();
-        for(int i=0;i<itemList.size();i++){
-            ol.add(itemList.get(i));
-        }
-        itemId.setCellValueFactory(new PropertyValueFactory<>("itemId"));
-        itemName.setCellValueFactory(new PropertyValueFactory<>("itemName"));
-        priceTesco.setCellValueFactory(new PropertyValueFactory<>("priceTesco"));
-        priceSpar.setCellValueFactory(new PropertyValueFactory<>("priceSpar"));
-        priceAldi.setCellValueFactory(new PropertyValueFactory<>("priceAldi"));
-        itemTable.setItems(ol);
+    private TextField itemName;
+    @FXML
+    private ListView<String> itemList;
+    @FXML
+    private TextField itemID;
+    @FXML
+    private TextField priceTesco;
+    @FXML
+    private TextField priceAldi;
+    @FXML
+    private TextField priceSpar;
+    @FXML 
+    private ChoiceBox<String> itemCategory;
+    
+    private String[] categories = {"Fruits", "Vegetables", "Meat", "Drinks"};
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        itemCategory.getItems().addAll(categories);
     }
-
-    Item eggs = new Item("Eggs (Extra Yellow Deep-Sleep) / 10 pcs", 729, 850, 765);
-
+    
+    Connection c = ConnectDatabase.connect();
+    ResultSet rs;
+    Statement stmt;
+    
     @FXML
     void ActionOnHomeButton(ActionEvent event) throws IOException {
         AppMain m = new AppMain();
         m.changeScene("HomePage.fxml");
     }
+
     @FXML
-    void ActionOnLogoutButton(ActionEvent event) throws IOException{
+    void ActionOnLogoutButton(ActionEvent event) throws IOException {
         AppMain m = new AppMain();
         m.changeScene("LoginForm.fxml");
 
     }
+
     @FXML
     void ActionOnSearchButton(ActionEvent event) {
-
+        try {
+            String searchName = itemName.getText();
+            String query;
+            stmt = c.createStatement();
+            ArrayList<String> items = new ArrayList<>();
+            itemList.getItems().clear();
+            if(!searchName.equals("")){
+                query = String.format("SELECT * FROM items WHERE name = '%s' JOIN prices ON items.item_id = prices.item_id JOIN shops ON ;", searchName);
+            }
+            else{
+                query =  "SELECT * FROM items;";
+            }
+            rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                int id = rs.getInt("item_id");
+                String name = rs.getString("name");
+                String category = rs.getString("category");
+                items.add("id: " + id + "\tname: " + name +"\tcategory: " + category);
+            }
+            itemList.getItems().addAll(items);
+        } catch (SQLException ex) {
+            Logger.getLogger(AdminController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
+
     @FXML
     void ActionOnAddItemButton(ActionEvent event) {
-
+          String item = itemName.getText();
+          String category = itemCategory.getValue();
+          int tescoPrice = parseInt(priceTesco.getText());
+          int sparPrice = parseInt(priceSpar.getText());
+          int aldiPrice = parseInt(priceAldi.getText());
+          
+          try{
+            c.setAutoCommit(false);
+            stmt = c.createStatement();
+            String queryItems = String.format("INSERT INTO items(name, category) VALUES('%s', '%s')", item, category);
+            stmt.executeUpdate(queryItems);
+            c.commit();
+            System.out.println("done");
+            String queryGetId = String.format("SELECT item_id FROM items WHERE name = '%s'", item);
+            rs = stmt.executeQuery(queryGetId);
+            rs.next();
+            int itemId = rs.getInt("item_id");
+            System.out.println(itemId);
+            String queryPrices = String.format("INSERT INTO prices(item_id, shop_id, price) VALUES(%d, 1, %d), (%d, 2, %d), (%d, 3, %d)", itemId, tescoPrice, itemId, sparPrice, itemId, aldiPrice);
+            stmt.executeUpdate(queryPrices);
+            c.commit();
+          } catch (SQLException ex) {
+            Logger.getLogger(AdminController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
+
     @FXML
     void ActionOnRemoveItemButton(ActionEvent event) {
-
+        int deleteId = parseInt(itemID.getText());
+        try {
+            c.setAutoCommit(false);
+            stmt = c.createStatement();
+            String queryPrices = String.format("DELETE FROM prices WHERE item_id = %d", deleteId);
+            stmt.executeUpdate(queryPrices);
+            c.commit();
+            String queryItems = String.format("DELETE FROM items WHERE item_id = %d", deleteId); 
+            stmt.executeUpdate(queryItems);
+            c.commit();
+        } catch (SQLException ex) {
+            Logger.getLogger(AdminController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
-
 }
