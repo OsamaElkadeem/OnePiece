@@ -10,13 +10,11 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
+
 public class CheckOutController {
 
     @FXML
     private Label aldiTotal;
-
-    @FXML
-    private ListView<?> checkoutList;
 
     @FXML
     private Button homeButton;
@@ -32,7 +30,11 @@ public class CheckOutController {
 
     @FXML
     private Label tescoTotal;
-
+    
+    @FXML
+    private ListView<String> checkoutList;
+    
+    
     @FXML
     void ActionOnAldiTotal(MouseEvent event) {
 
@@ -70,7 +72,7 @@ public class CheckOutController {
 
     }
 
-
-
-
+    @FXML
+    public void ActionOnDarkModeButton(ActionEvent actionEvent) {
+    }
 }

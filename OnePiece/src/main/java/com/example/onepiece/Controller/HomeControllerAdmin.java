@@ -1,16 +1,19 @@
-package com.example.onepiece;
+package com.example.onepiece.Controller;
 
+import com.example.onepiece.AppMain;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class HomeController {
+public class HomeControllerAdmin {
     @FXML
     private Button DarkModeButton;
     @FXML
     private Button checkoutButton;
+    @FXML
+    private Button listButton;
     @FXML
     private Button logoutButton;
     @FXML
@@ -25,6 +28,12 @@ public class HomeController {
     @FXML
     void ActionOnDarkModeButton(ActionEvent event) {
 
+    }
+
+    @FXML
+    void ActionOnListButton(ActionEvent event) throws IOException {
+        AppMain m = new AppMain();
+        m.changeScene("AdminList.fxml");
     }
 
     @FXML

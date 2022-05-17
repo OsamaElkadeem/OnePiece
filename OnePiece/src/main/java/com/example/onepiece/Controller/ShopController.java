@@ -4,7 +4,6 @@
  */
 package com.example.onepiece.Controller;
 
-
 import com.example.onepiece.AppMain;
 import com.example.onepiece.Model.ConnectDatabase;
 import javafx.event.ActionEvent;
@@ -18,9 +17,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-public class ShopController {
+
+public class ShopController{
+
     @FXML
     private Button homeButton;
     @FXML
@@ -31,17 +33,19 @@ public class ShopController {
     private Button addItemButton;
     @FXML
     private Button removeItemButton;
-     @FXML
+    @FXML
     private Button CheckOutButton;
     @FXML
     private TextField itemName;
     @FXML
     private ListView<String> itemList;
-    
+
     Connection c = ConnectDatabase.connect();
     ResultSet rs;
     Statement stmt;
-
+    
+    public ArrayList<String> selectedItems = new ArrayList<>();
+    
     @FXML
     void ActionOnHomeButton(ActionEvent event) throws IOException {
         AppMain m = new AppMain();
@@ -63,19 +67,20 @@ public class ShopController {
             stmt = c.createStatement();
             ArrayList<String> items = new ArrayList<>();
             itemList.getItems().clear();
-            
-            if(!searchName.equals("")){ 
-                query = String.format("SELECT * FROM items WHERE name = '%s';", searchName);
-            }
-            else{
-                query =  "SELECT * FROM items;";
+            if (!searchName.equals("")) {
+                query = String.format("SELECT items.item_id, items.name as item_name, category, price, shops.name as shop_name FROM items JOIN prices ON items.item_id = prices.item_id JOIN shops ON prices.shop_id = shops.shop_id WHERE items.name = '%s';", searchName);
+            } else {
+                query = "SELECT items.item_id, items.name as item_name, category, price, shops.name as shop_name FROM items JOIN prices ON items.item_id = prices.item_id JOIN shops ON prices.shop_id = shops.shop_id";
             }
             rs = stmt.executeQuery(query);
             while (rs.next()) {
                 int id = rs.getInt("item_id");
-                String name = rs.getString("name");
+                String item = rs.getString("item_name");
                 String category = rs.getString("category");
-                items.add("id: " + id + " name: " + name +" category: " + category);
+                float price = rs.getInt("price");
+                String shop = rs.getString("shop_name");
+                System.out.println("id: " + id + "\tname: " + item + "\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
+                items.add("id: " + id + "\tname: " + item + "\tcategory: " + category + "\tprice: " + price + "\tshop: " + shop);
             }
             itemList.getItems().addAll(items);
         } catch (SQLException ex) {
@@ -85,22 +90,21 @@ public class ShopController {
 
     @FXML
     void ActionOnAddItemButton(ActionEvent event) {
-       /* String searchName = itemName.getText();
-        String query =  "SELECT * FROM items;";
-        stmt = c.createStatement();
-            ArrayList<String> items = new ArrayList<>();
-            itemList.getItems().clear();*/
+        String selectedItem = itemList.getSelectionModel().getSelectedItem();
+        selectedItems.add(selectedItem);
+        System.out.println(selectedItem);
     }
 
     @FXML
     void ActionOnRemoveItemButton(ActionEvent event) {
-
+        String selectedItem = itemList.getSelectionModel().getSelectedItem();
+        selectedItems.remove(selectedItem);
     }
+
     @FXML
     void ActionOnCheckOutButton(ActionEvent event) throws IOException {
         AppMain m = new AppMain();
         m.changeScene("CheckOut.fxml");
 
     }
-
 }

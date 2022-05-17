@@ -13,8 +13,6 @@ public class HomeController {
     @FXML
     private Button checkoutButton;
     @FXML
-    private Button listButton;
-    @FXML
     private Button logoutButton;
     @FXML
     private Button shopButton;
@@ -28,12 +26,6 @@ public class HomeController {
     @FXML
     void ActionOnDarkModeButton(ActionEvent event) {
 
-    }
-
-    @FXML
-    void ActionOnListButton(ActionEvent event) throws IOException {
-        AppMain m = new AppMain();
-        m.changeScene("AdminList.fxml");
     }
 
     @FXML
