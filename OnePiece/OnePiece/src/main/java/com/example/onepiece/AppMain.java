@@ -1,5 +1,15 @@
 package com.example.onepiece;
 
+<<<<<<<< HEAD:OnePiece/OnePiece/src/main/java/com/example/onepiece/AppMain.java
+<<<<<<< Updated upstream
+=======
+import com.example.onepiece.Controller.CheckOutController;
+import com.example.onepiece.Controller.ShopController;
+>>>>>>> Stashed changes
+========
+import com.example.onepiece.Controller.CheckOutController;
+import com.example.onepiece.Controller.ShopController;
+>>>>>>>> Database:OnePiece/src/main/java/com/example/onepiece/AppMain.java
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,6 +37,24 @@ public class AppMain extends Application {
     }
 
     public static void main(String[] args) {
+<<<<<<<< HEAD:OnePiece/OnePiece/src/main/java/com/example/onepiece/AppMain.java
+<<<<<<< Updated upstream
         launch();
+=======
+        
+        launch();
+========
+        
+        launch();
+>>>>>>>> Database:OnePiece/src/main/java/com/example/onepiece/AppMain.java
+
+        ShopController shop = new ShopController();
+        CheckOutController check = new CheckOutController();
+        check.setCart(shop.getCartItems());
+
+<<<<<<<< HEAD:OnePiece/OnePiece/src/main/java/com/example/onepiece/AppMain.java
+>>>>>>> Stashed changes
+========
+>>>>>>>> Database:OnePiece/src/main/java/com/example/onepiece/AppMain.java
     }
 }

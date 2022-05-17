@@ -10,7 +10,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<<< HEAD:OnePiece/OnePiece/target/classes/com/example/onepiece/LoginForm.fxml
+<<<<<<< Updated upstream
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.LoginController">
+=======
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.LoginController">
+>>>>>>> Stashed changes
+========
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dae3ea;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onepiece.Controller.LoginController">
+>>>>>>>> Database:OnePiece/src/main/resources/com/example/onepiece/LoginForm.fxml
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="262.0">
          <ImageView fitHeight="333.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
@@ -33,8 +41,18 @@
          <ImageView fitHeight="77.0" fitWidth="69.0" layoutX="161.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../../imgs/lock.png" />
          </ImageView>
+<<<<<<<< HEAD:OnePiece/OnePiece/target/classes/com/example/onepiece/LoginForm.fxml
+<<<<<<< Updated upstream
          <TextField fx:id="username" layoutX="121.0" layoutY="219.0" promptText="Username" />
          <PasswordField fx:id="password" layoutX="122.0" layoutY="265.0" promptText="Password" />
+=======
+         <TextField fx:id="username" layoutX="121.0" layoutY="219.0" onKeyPressed="#keyPressed" promptText="Username" />
+         <PasswordField fx:id="password" layoutX="122.0" layoutY="265.0" onKeyPressed="#keyPressed" promptText="Password" />
+>>>>>>> Stashed changes
+========
+         <TextField fx:id="username" layoutX="121.0" layoutY="219.0" onKeyPressed="#keyPressed" promptText="Username" />
+         <PasswordField fx:id="password" layoutX="122.0" layoutY="265.0" onKeyPressed="#keyPressed" promptText="Password" />
+>>>>>>>> Database:OnePiece/src/main/resources/com/example/onepiece/LoginForm.fxml
          <Label fx:id="label" layoutX="122.0" layoutY="305.0" textFill="RED" />
          <Button fx:id="loginButton" layoutX="165.0" layoutY="357.0" mnemonicParsing="false" onAction="#ActionOnLoginButton" style="-fx-background-color: #e58018;" text="Login">
             <font>
