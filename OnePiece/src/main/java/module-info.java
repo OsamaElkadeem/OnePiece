@@ -8,4 +8,10 @@ module com.example.onepiece {
 
     opens com.example.onepiece to javafx.fxml;
     exports com.example.onepiece;
+<<<<<<< Updated upstream
+=======
+    exports com.example.onepiece.Controller;
+    opens com.example.onepiece.Controller to javafx.fxml;
+
+>>>>>>> Stashed changes
 }

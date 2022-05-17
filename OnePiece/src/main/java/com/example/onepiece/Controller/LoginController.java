@@ -1,11 +1,14 @@
-package com.example.onepiece;
+package com.example.onepiece.Controller;
 
+import com.example.onepiece.AppMain;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 import java.io.IOException;
 
@@ -27,6 +30,17 @@ public class LoginController {
     void ActionOnLoginButton(ActionEvent event) throws IOException {
         checkLogin();
     }
+
+    @FXML
+    void keyPressed(KeyEvent event) throws IOException {
+        switch (event.getCode()) {
+            case ENTER:
+                checkLogin();
+                break;
+
+        }
+    }
+
 
     private void checkLogin() throws IOException {
         AppMain m = new AppMain();

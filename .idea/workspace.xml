@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c191866-2fd1-494e-9bf3-d7088360388a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_199.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/OnePiece.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/OnePiece.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/CheckOutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/CheckOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/CheckOutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/ShoppingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Model/ItemDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Model/JpaItemDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/com/example/onepiece/Controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/AdminList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/AdminList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/CheckOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/CheckOut.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/ShoppingCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/src/main/resources/com/example/onepiece/ShoppingCart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AdminList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AppMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/AppMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/CheckOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/CheckOut.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/CheckOutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ConnectDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ConnectDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/CheckOutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/CheckOutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Controller/ShoppingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/ItemDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/Model/JpaItemDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ShopController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ShoppingCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/ShoppingCart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Price.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Price.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/com/example/onepiece/relations/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnePiece/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnePiece/target/classes/module-info.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29G8uowMcOixNuLbiQnOhQjhg0h" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OnePiece/src/main/resources/META-INF" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\COLLEGE\4TH TERM\SOFTWARE DEVELOPMENT\PROJECT\OnePiece\OnePiece\src\main\resources\META-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.onepiece.AppMain" />
+      <module name="OnePiece" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.onepiece.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c191866-2fd1-494e-9bf3-d7088360388a" name="Changes" comment="" />
+      <created>1652728287116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652728287116</updated>
+      <workItem from="1652728288940" duration="11664000" />
+      <workItem from="1652740705844" duration="1271000" />
+      <workItem from="1652742468322" duration="117000" />
+      <workItem from="1652742596641" duration="4670000" />
+      <workItem from="1652749993193" duration="138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
